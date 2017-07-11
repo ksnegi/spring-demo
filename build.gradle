@@ -1,0 +1,27 @@
+group 'com.negi.demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.3.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '4.3.3.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.3.RELEASE'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.3.RELEASE'
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.42'
+
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.7.25'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
+
+    testCompile group: 'junit', name: 'junit', version: '4.13-SNAPSHOT'
+}
